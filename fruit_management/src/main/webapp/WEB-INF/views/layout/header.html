@@ -1,0 +1,128 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<th:block th:fragment="header">
+    <header id="topnav">
+        <!-- Topbar Start -->
+        <div class="navbar-custom" style="background-color: #78b4d6">
+            <div class="container-fluid">
+                <ul class="list-unstyled topnav-menu float-right mb-0">
+
+<!--                    <button type="button" class="btn btn-outline-light">-->
+<!--                        <th:block th:text="${username}"/>-->
+<!--                    </button>-->
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light"
+                           data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="/assets/images/users/avatar-3.jpg" alt="user-image" class="rounded-circle">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <a href="/index" class="dropdown-item notify-item">
+<!--                                <i class="mdi mdi-settings-outline"></i>-->
+                                <span>Home </span>
+                            </a>
+                            <!-- item-->
+                            <a href="/products" class="dropdown-item notify-item">
+                                <i class="mdi mdi-settings-outline"></i>
+                                <span>Products </span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="/users" class="dropdown-item notify-item">
+                                <i class="mdi mdi-settings-outline"></i>
+                                <span>User</span>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- item-->
+                            <a href="/login" class="dropdown-item notify-item">
+                                <i class="mdi mdi-logout-variant"></i>
+                                <span>Logout</span>
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="/index" class="logo text-center">
+
+<!--                                        <img src="/assets/images/Yummy_shark-removebg-preview.png" alt="">-->
+
+                        <span class="logo-sm">
+                                        <img src="/assets/images/Yummy_shark-removebg-preview.png" alt="", height="22">
+                                    </span>
+                    </a>
+                </div>
+
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+
+                    <li class="d-none d-sm-block">
+                        <form class="app-search">
+                            <div class="app-search-box">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- end Topbar -->
+
+<!--        <div class="topbar-menu">-->
+<!--            <div class="container-fluid">-->
+<!--                <div id="navigation">-->
+<!--                    &lt;!&ndash; Navigation Menu&ndash;&gt;-->
+<!--                    <ul class="navigation-menu">-->
+
+<!--                        <li class="has-submenu">-->
+<!--                            <a href="#"> <i class="mdi mdi-view-dashboard"></i>Dashboard</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="has-submenu">-->
+<!--                            <a href="#">-->
+<!--                                <i class="mdi mdi-layers"></i>UI Kit</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="has-submenu">-->
+<!--                            <a href="#">-->
+<!--                                <i class="mdi mdi-diamond-stone"></i>Components</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="has-submenu">-->
+<!--                            <a href="#">-->
+<!--                                <i class="mdi mdi-google-pages"></i>Pages</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="has-submenu">-->
+<!--                            <a href="#">-->
+<!--                                <i class="mdi mdi-book-multiple"></i>Extras</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="has-submenu">-->
+<!--                            <a href="#"> <i class="mdi mdi-comment-text"></i>Blog</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="has-submenu">-->
+<!--                            <a href="#"> <i class="mdi mdi-home-map-marker"></i>Real Estate</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="has-submenu">-->
+<!--                            <a href="#"> <i class="mdi mdi-flip-horizontal"></i>Layouts</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </header>
+</th:block>
